@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Sidebar</title>
+</head>
+<body onload="checkCollapsed()" class="bg-gray-300">
+    <div  class="">
+        <div id="aside" class="px-6 flex flex-col justify-between items-center bg-blue-950 text-white w-auto  h-full fixed left-0  ">
+            <div onclick="hamShow()" class="absolute top-3 -right-3">
+                <i class="bi bi-x-circle-fill text-xl text-white opacity-1"></i>
+            </div>
+            
+            <div class=" flex flex-col">
+                <div class="flex flex-row gap-4 mb-10 mt-4">
+                    <i class="bi bi-instagram text-2xl"></i>
+                    <p class="menu hidden text-2xl">Instagram</p>
+                </div>
+                <div id="scrollable" class="flex flex-col gap-8">
+                    <div class="text-xl flex flex-row gap-4">
+                        <i class="bi bi-house"></i>
+                        <p class="menu hidden">Home</p>
+                    </div>
+                    <div class="text-xl flex flex-row gap-4">
+                        <i class="bi bi-grid"></i>
+                        <p class="menu hidden">Dashboard</p>
+                    </div>
+                    <div class="text-xl flex flex-row gap-4">
+                        <i class="bi bi-graph-up"></i>
+                        <p class="menu hidden">Chart</p>
+                    </div>
+                    <div class="text-xl flex flex-row gap-4">
+                        <i class="bi bi-compass"></i>
+                        <p class="menu hidden">Explore</p>
+                    </div>
+                    <div class="sidebar ">
+                        <div class="flex gap-4 mb-8">
+                        <div>
+                            <i class="bi bi-plug"></i>
+                        </div>
+                        <div class="dropdown menu">
+                            <button class="dropbtn">Plugins</button>
+                            <div class="dropdown-content" id="dropdown1">
+                                <a href="#option1-1">Option 1</a>
+                                <a href="#option1-2">Option 2</a>
+                                
+                            </div>
+                        </div>
+                        </div>
+                        <div class="flex gap-4 mb-8">
+                            <div>
+                                <i class="bi bi-grid-3x2-gap"></i>
+                            </div>
+                            <div class="dropdown menu">
+                                <button class="dropbtn">Category</button>
+                                <div class="dropdown-content" id="dropdown1">
+                                    <a href="#option1-1">Option 1</a>
+                                    <a href="#option1-2">Option 2</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 mb-8">
+                                <div>
+                                    <i class="bi bi-images"></i>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="dropbtn menu">Posts</button>
+                                    <div class="dropdown-content" id="dropdown1">
+                                        <a href="#option1-1">Option 1</a>
+                                        <a href="#option1-2">Option 2</a>
+                                        
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    
+                      
+                </div>
+                
+            </div>
+            <div class=" justify-center  flex flex-col gap-4 text-2xl  mb-4">
+                <div onclick="myFunction()" class="flex flex-row gap-4">
+                    <i class="bi bi-arrows-expand-vertical"></i>
+                    <p  class="menu hidden">Collapse</p>
+                </div>
+                <div class="flex gap-4">
+                    <i class="bi bi-person-circle menu hidden"></i>
+                    <p class="menu hidden">Lucky</p>
+                    <i class="bi bi-box-arrow-left"></i>
+                </div>
+            </div>
+        </div>
+        <div onclick="hamHide()" id="hamburger" class="hidden">
+            <i class="bi bi-list text-2xl p-4"></i>
+        </div>
+        
+       
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <link rel="stylesheet" href="output.css">
+    <title>Rellax</title>
+</head>
+<body class="bg-black">
+    <div>
+        <div class=" flex flex-col justify-center">
+            <div class="relative w-full h-screen bg-transparent text-white overflow-hidden">
+                <img class="fixed -top-[40rem] rellax brightness-50" data-rellax-speed="-4" src="./images/woman-in-dark.webp" alt="">
+                <p class="absolute top-[20rem] left-20 text-9xl text-white w-full  leading-10 rellax " data-rellax-speed="2">Creative Duo</p>
+                <p class="absolute bottom-[5rem] right-20 text-2xl w-[40%] items-end z-50 rellax" data-rellax-speed="8">On an endless journey to create experiences that inspire others. Always motived by design that's honest, aesthetic and natural. Probably the only designer you’ll ever need.</p>
+            </div>
+            <div class="bg-black px-20 flex mx-auto gap-8 py-20 z-50 ">
+                <div class="flex flex-col gap-8 rellax" data-rellax-speed="3">
+                    <div>
+                        <p class="text-6xl text-white rellax" data-rellax-speed="-2" >OUR WORK</p>
+                    </div>
+                    <div class="rellax" data-rellax-zindex="5">
+                        <img class="brightness-75" src="./images/gild-cover.webp" alt="">
+                    </div>
+                    <div class="rellax" data-rellax-zindex="5">
+                        <img class="brightness-75" src="./images/project2.webp" alt="">
+                    </div>
+                    <div class="rellax" data-rellax-zindex="5">
+                        <img class="brightness-75" src="./images/project3.webp" alt="">
+                    </div>
+                </div>
+                <div class="flex flex-col gap-8 rellax" data-rellax-speed="6">
+                    <div>
+                        <img class="brightness-75" src="./images/project5.webp" alt="">
+                    </div>
+                    <div>
+                        <img class="brightness-75" src="./images/project6.webp" alt="">
+                    </div>
+                    <div>
+                        <img class="brightness-75" src="./images/project4.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script>
+    // Also can pass in optional settings block
+    var rellax = new Rellax('.rellax', {
+      speed: -2,
+      center: false,
+      wrapper: null,
+      round: true,
+      vertical: true,
+      horizontal: false
+    });
+  </script>
+</html>

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEGA MENU</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        a:hover{
+           background-color: rgb(197, 216, 197);
+           color: rgb(5, 36, 5);
+        }
+        a{
+            padding: 0.5rem;
+           border-radius: 0.5rem;
+        }
+        .myarrow{
+            transition: 0.1s ease-in;
+        }
+        
+        .arrow:hover .myarrow{
+            transform: translateX(30%);
+            color: rgb(95, 205, 95);
+        }
+        .ham:hover{
+            cursor: pointer;
+            color: blueviolet;
+        }
+        
+
+    </style>
+</head>
+<body class="bg-white">
+    <div class="bg-white flex justify-between items-baseline pt-4 md:pt-8 px-2 md:px-8 gap-4 relative">
+        <div>
+            <h1 class="text-2xl font-bold text-black border-t-2 border-b-2 border-black">LANDMARK</h1>
+        </div>
+        <div class="flex gap-4">
+            <div class="hidden md:block" data-dropdown>
+                <button class="text-black text-md inline-flex items-center hover:text-green-900 font-inherit" data-dropdown-button>
+                    <span >Megamenu</span>
+                                <svg class="ml-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                </button>
+                <div class="absolute left-0 right-0 mx-auto mt-4 col-span-6  w-[90%]  bg-white  rounded shadow-md invisible opacity-0  transition-all duration-300 ease-in-out" data-dropdown-menu>
+                    <div class="grid grid-cols-4 gap-4 p-4">
+                        <!-- Column 1: Hoverable Links -->
+                        <div class="flex flex-col gap-2">
+                            <h3 class="text-sm font-semibold mb-8  links">Useful links</h3>
+                            <a href="#" class="text-gray-800  block mb-1">Market research</a>
+                            <a href="#" class="text-gray-800  block mb-1">Advertising</a>
+                            <a href="#" class="text-gray-800  block mb-1">Consumer behaviour</a>
+                            <a href="#" class="text-gray-800  block mb-1">Digital marketing</a>
+                            <a href="#" class="text-gray-800  block mb-1">Marketing ethics</a>
+                            <a href="#" class="text-gray-800  block mb-1">Social media marketing</a>
+                        </div>
+                        
+                        <!-- Column 2: Cards with Image and Text -->
+                        <div>
+                            <h3 class="text-sm font-semibold mb-8">Company</h3>
+                            <div class="bg-gray-50 p-4 rounded-md hover:bg-gray-100 flex gap-4 mb-4">
+                                <div>
+                                    <i class="bi bi-boxes"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-gray-800 font-semibold">About us</h4>
+                                    <p class="text-gray-600 w-full p-0">Description for card 1.</p>
+    
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-md hover:bg-gray-100 flex gap-4 mb-4">
+                                <div>
+                                    <i class="bi bi-rocket"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-gray-800 font-semibold">Career</h4>
+                                    <p class="text-gray-600 w-full p-0">Description for card 1.</p>
+    
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-md hover:bg-gray-100 flex gap-4 mb-4">
+                                <div>
+                                    <i class="bi bi-emoji-smile"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-gray-800 font-semibold">Customer stories</h4>
+                                    <p class="text-gray-600 w-full p-0">Description for card 1.</p>
+    
+                                </div>
+                            </div>
+                            <!-- Add two more cards as needed -->
+                        </div>
+                        
+                        <!-- Column 3: Hoverable Links and Button -->
+                        <div class="flex flex-col gap-4">
+                            <div>
+                            <h3 class="text-sm font-semibold mb-8 links">Integration</h3>
+                            </div>
+                            <div>
+                                <div class="flex font-semibold justify-between mb-4 hover:bg-gray-100 p-2 arrow">
+                                    <div>
+                                        <i class="bi bi-slack"></i>
+                                        <h1 class="text-black ml-4 text-base inline-block">Slack</h1>
+                                    </div>
+                                    <div class="myarrow">
+                                        <i class="bi bi-arrow-right"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex font-semibold justify-between mb-4 hover:bg-gray-100 p-2 arrow">
+                                        <div>
+                                            <i class="bi bi-browser-edge"></i>
+                                            <h1 class="text-black ml-4 text-base inline-block">Webflow</h1>
+                                        </div>
+                                        <div class="myarrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div> 
+                                    <div class="flex font-semibold justify-between mb-4 hover:bg-gray-100 p-2 arrow">
+                                        <div>
+                                            <i class="bi bi-envelope"></i>
+                                            <h1 class="text-black ml-4 text-base inline-block">Mail chimp</h1>
+                                        </div>
+                                        <div class="myarrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex font-semibold justify-between mb-4 hover:bg-gray-100 p-2 arrow">
+                                        <div>
+                                            <i class="bi bi-reddit"></i>
+                                            <h1 class="text-black ml-4 text-base inline-block">Reddit</h1>
+                                        </div>
+                                        <div class="myarrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="bg-blue-500 text-white px-4 py-2 rounded-md mt-4 hover:bg-blue-600 w-full">Button</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Column 4: Cards with Image and Text -->
+                        <div>
+                            <div>
+                                <h1 class="text-black text-sm font-semibold mb-8">Recent blogs</h1>
+                            </div>
+                            <div class="flex flex-col">
+                                <div class="flex hover:text-green-800 hover:bg-gray-100 p-2">
+                                    <div>
+                                        <i class="bi bi-image-fill text-4xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-black hover:text-green-950 text-sm font-semibold">10 things to know about Mizzle</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex hover:text-green-800 hover:bg-gray-100 p-2">
+                                        <div>
+                                            <i class="bi bi-image-fill text-4xl"></i>
+                                        </div>
+                                        <div>
+                                            <p class="text-black hover:text-green-950 text-sm font-semibold">Power of Gratitude</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex hover:text-green-800 hover:bg-gray-100 p-2">
+                                        <div>
+                                            <i class="bi bi-image-fill text-4xl"></i>
+                                        </div>
+                                        <div>
+                                            <p class="text-black hover:text-green-950 text-sm font-semibold">Effortless web</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:block" data-dropdown>
+                <button class="text-black text-md inline-flex items-center hover:text-green-900 font-inherit" data-dropdown-button>
+                    <span >Portfolio</span>
+                                <svg class="ml-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                </button>
+                <div class="absolute left-0 right-0 mx-auto mt-4 col-span-6  w-[50%]  bg-white  rounded shadow-md invisible opacity-0  transition-all duration-300 ease-in-out" data-dropdown-menu>
+                    <div class="grid grid-cols-3 gap-4 p-4">
+                        <div>
+                            
+                            <div class="bg-gray-50 p-4 rounded-md hover:bg-gray-100 arrow">
+                                <img src="https://via.placeholder.com/150" alt="Card Image 1" class="w-full h-32 object-cover mb-2">
+                                <h4 class="text-gray-800 font-semibold">Card Title 1</h4>
+                                <p class="text-gray-600 w-full p-0">Description for card 1.</p>
+                                <div class="flex gap-4 mt-8">
+                                    <h1 class="text-green-600 text-base">Learn more</h1>
+                                    <i class="bi bi-arrow-right myarrow"></i>
+                                </div>
+                            </div>
+                            <!-- Add two more cards as needed -->
+                        </div>
+                        <div>
+                            
+                            <div class="bg-gray-50 p-4 rounded-md hover:bg-gray-100 arrow">
+                                <img src="https://via.placeholder.com/150" alt="Card Image 1" class="w-full h-32 object-cover mb-2">
+                                <h4 class="text-gray-800 font-semibold">Card Title 2</h4>
+                                <p class="text-gray-600 w-full p-0">Description for card 2.</p>
+                                <div class="flex gap-4 mt-8 ">
+                                    <h1 class="text-green-600 text-base">Learn more</h1>
+                                    <i class="bi bi-arrow-right myarrow"></i>
+                                </div>
+                            </div>
+                            <!-- Add two more cards as needed -->
+                        </div>
+                        
+                        <div class="flex flex-col gap-2 pl-8 border-l-2 border-l-gray-200">
+                            <h3 class="text-sm font-semibold mb-8  links">Portfolio pages</h3>
+                            <a href="#" class="text-gray-800  block mb-1">Market research</a>
+                            <a href="#" class="text-gray-800  block mb-1">Advertising</a>
+                            <a href="#" class="text-gray-800  block mb-1">Consumer behaviour</a>
+                            <a href="#" class="text-gray-800  block mb-1">Digital marketing</a>
+                            <a href="#" class="text-gray-800  block mb-1">Marketing ethics</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <button class="hidden md:block p-2 bg-green-600 text-white rounded-lg">Buy now!</button>
+        </div>
+
+        <div id="ham" onclick="hamShow()" class="block md:hidden ham">
+            <i class="text-4xl bi bi-list"></i>
+        </div>
+
+        <div id="cross" onclick="hamClose()" class="hidden animate-[spin_1s_ease-in-out]">
+            <i class="text-2xl text-red-800 bi bi-x-lg"></i>
+        </div>
+
+
+        <!-- for hamburger -->
+        <div  id="hambtn" class="invisible opacity-0 w-full h-auto absolute top-[150%] left-0 right-0  transition-all duration-300 ease-in-out">
+            <div class="flex flex-col">
+                <div onclick="toggleDropdown('megaDropdownContent')" class="w-full border-t-2 py-4 border-gray-300">
+                    <div class="text-black text-md flex flex-col gap-4 justify-between hover:text-green-900 font-inherit px-2">
+                        <div class="flex justify-between">
+                            <h1 class="text-black font-semibold text-base">Megamenu</h1>
+                        <svg class="ml-1 w-5 h-5 text-right" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                        </div>
+                        <div id="megaDropdownContent" class="hidden border-2 border-gray-400 rounded-md">
+                            <div class="grid grid-cols-1 gap-4 p-4">
+                            <!-- Column 1: Hoverable Links -->
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-sm font-semibold mb-8  links">Useful links</h3>
+                                <a href="#" class="text-gray-800  block mb-1">Market research</a>
+                                <a href="#" class="text-gray-800  block mb-1">Advertising</a>
+                                <a href="#" class="text-gray-800  block mb-1">Consumer behaviour</a>
+                                <a href="#" class="text-gray-800  block mb-1">Digital marketing</a>
+                                <a href="#" class="text-gray-800  block mb-1">Marketing ethics</a>
+                                <a href="#" class="text-gray-800  block mb-1">Social media marketing</a>
+                            </div>
+                            
+                            <!-- Column 2: Cards with Image and Text -->
+                            <div>
+                                <h3 class="text-sm font-semibold mb-8">Company</h3>
+                                <div class="bg-gray-50 p-4 rounded-md hover:bg-gray-100 flex gap-4 mb-4">
+                                    <div>
+                                        <i class="bi bi-boxes"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-gray-800 font-semibold">About us</h4>
+                                        <p class="text-gray-600 w-full p-0">Description for card 1.</p>
+        
+                                    </div>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-md hover:bg-gray-100 flex gap-4 mb-4">
+                                    <div>
+                                        <i class="bi bi-rocket"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-gray-800 font-semibold">Career</h4>
+                                        <p class="text-gray-600 w-full p-0">Description for card 1.</p>
+        
+                                    </div>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-md hover:bg-gray-100 flex gap-4 mb-4">
+                                    <div>
+                                        <i class="bi bi-emoji-smile"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-gray-800 font-semibold">Customer stories</h4>
+                                        <p class="text-gray-600 w-full p-0">Description for card 1.</p>
+        
+                                    </div>
+                                </div>
+                                <!-- Add two more cards as needed -->
+                            </div>
+                            
+                            <!-- Column 3: Hoverable Links and Button -->
+                            <div class="flex flex-col gap-4">
+                                <div>
+                                <h3 class="text-sm font-semibold mb-8 links">Integration</h3>
+                                </div>
+                                <div>
+                                    <div class="flex font-semibold justify-between mb-4 hover:bg-gray-100 p-2 arrow">
+                                        <div>
+                                            <i class="bi bi-slack"></i>
+                                            <h1 class="text-black ml-4 text-base inline-block">Slack</h1>
+                                        </div>
+                                        <div class="myarrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex font-semibold justify-between mb-4 hover:bg-gray-100 p-2 arrow">
+                                            <div>
+                                                <i class="bi bi-browser-edge"></i>
+                                                <h1 class="text-black ml-4 text-base inline-block">Webflow</h1>
+                                            </div>
+                                            <div class="myarrow">
+                                                <i class="bi bi-arrow-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div> 
+                                        <div class="flex font-semibold justify-between mb-4 hover:bg-gray-100 p-2 arrow">
+                                            <div>
+                                                <i class="bi bi-envelope"></i>
+                                                <h1 class="text-black ml-4 text-base inline-block">Mail chimp</h1>
+                                            </div>
+                                            <div class="myarrow">
+                                                <i class="bi bi-arrow-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex font-semibold justify-between mb-4 hover:bg-gray-100 p-2 arrow">
+                                            <div>
+                                                <i class="bi bi-reddit"></i>
+                                                <h1 class="text-black ml-4 text-base inline-block">Reddit</h1>
+                                            </div>
+                                            <div class="myarrow">
+                                                <i class="bi bi-arrow-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="bg-blue-500 text-white px-4 py-2 rounded-md mt-4 hover:bg-blue-600 w-full">Button</button>
+                                </div>
+                            </div>
+                            
+                            <!-- Column 4: Cards with Image and Text -->
+                            <div>
+                                <div>
+                                    <h1 class="text-black text-sm font-semibold mb-8">Recent blogs</h1>
+                                </div>
+                                <div class="flex flex-col">
+                                    <div class="flex hover:text-green-800 hover:bg-gray-100 p-2">
+                                        <div>
+                                            <i class="bi bi-image-fill text-4xl"></i>
+                                        </div>
+                                        <div>
+                                            <p class="text-black hover:text-green-950 text-sm font-semibold">10 things to know about Mizzle</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex hover:text-green-800 hover:bg-gray-100 p-2">
+                                            <div>
+                                                <i class="bi bi-image-fill text-4xl"></i>
+                                            </div>
+                                            <div>
+                                                <p class="text-black hover:text-green-950 text-sm font-semibold">Power of Gratitude</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex hover:text-green-800 hover:bg-gray-100 p-2">
+                                            <div>
+                                                <i class="bi bi-image-fill text-4xl"></i>
+                                            </div>
+                                            <div>
+                                                <p class="text-black hover:text-green-950 text-sm font-semibold">Effortless web</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="toggleDropdown('portfolioDropdownContent')" class="w-full border-t-2 border-b-2 py-4 border-gray-300">
+                    <div class="text-black text-md flex flex-col gap-4 justify-between hover:text-green-900 font-inherit px-2">
+                        <div class="flex justify-between">
+                            <h1 class="text-black font-semibold text-base">Portfolio</h1>
+                        <svg class="ml-1 w-5 h-5 text-right" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                        </div>
+                        <div id="portfolioDropdownContent" class="hidden border-2 border-gray-400 rounded-md">
+                            <div class="grid grid-cols-1 gap-4 p-4">
+                                <div>
+                                    
+                                    <div class="bg-gray-50 p-4 rounded-md hover:bg-gray-100 arrow">
+                                        <img src="https://via.placeholder.com/100" alt="Card Image 1" class="w-full h-32 object-cover mb-2">
+                                        <h4 class="text-gray-800 font-semibold">Card Title 1</h4>
+                                        <p class="text-gray-600 w-full p-0">Description for card 1.</p>
+                                        <div class="flex gap-4 mt-8">
+                                            <h1 class="text-green-600 text-base">Learn more</h1>
+                                            <i class="bi bi-arrow-right myarrow"></i>
+                                        </div>
+                                    </div>
+                                    <!-- Add two more cards as needed -->
+                                </div>
+                                <div>
+                                    
+                                    <div class="bg-gray-50 p-4 rounded-md hover:bg-gray-100 arrow">
+                                        <img src="https://via.placeholder.com/100" alt="Card Image 1" class="w-full h-32 object-cover mb-2">
+                                        <h4 class="text-gray-800 font-semibold">Card Title 2</h4>
+                                        <p class="text-gray-600 w-full p-0">Description for card 2.</p>
+                                        <div class="flex gap-4 mt-8 ">
+                                            <h1 class="text-green-600 text-base">Learn more</h1>
+                                            <i class="bi bi-arrow-right myarrow"></i>
+                                        </div>
+                                    </div>
+                                    <!-- Add two more cards as needed -->
+                                </div>
+                                
+                                <div class="flex flex-col gap-2 px-2">
+                                    <h3 class="text-sm font-semibold mb-8  links">Portfolio pages</h3>
+                                    <a href="#" class="text-gray-800  block mb-1">Market research</a>
+                                    <a href="#" class="text-gray-800  block mb-1">Advertising</a>
+                                    <a href="#" class="text-gray-800  block mb-1">Consumer behaviour</a>
+                                    <a href="#" class="text-gray-800  block mb-1">Digital marketing</a>
+                                    <a href="#" class="text-gray-800  block mb-1">Marketing ethics</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        
+
+        let toggleDropdown = (dropdownId) => {
+            let dropdown = document.getElementById(dropdownId);
+            if (dropdown.classList.contains('hidden')) {
+                dropdown.classList.remove('hidden');
+            } else {
+                dropdown.classList.add('hidden');
+            }
+        }
+
+
+        let hamShow = ()=>{
+            console.log("in hamshow")
+            let temp = document.getElementById('hambtn')
+            document.getElementById('ham').classList.add('hidden')
+            document.getElementById('cross').classList.remove('hidden');
+            temp.classList.remove('invisible' , "opacity-0");
+        }
+
+        let hamClose =()=>{
+            let temp = document.getElementById('hambtn')
+            temp.classList.add('invisible' , "opacity-0")
+            document.getElementById('ham').classList.remove('hidden')
+            document.getElementById('cross').classList.add('hidden')
+        }
+
+        document.querySelectorAll("[data-dropdown]").forEach(dropdown => {
+    const button = dropdown.querySelector("[data-dropdown-button]")
+    const menu = dropdown.querySelector("[data-dropdown-menu]")
+    button.addEventListener("mouseover", () => {
+        menu.classList.remove("invisible", "opacity-0")
+    })
+    button.addEventListener("mouseout", () => {
+        menu.classList.add("invisible", "opacity-0")
+    })
+    menu.addEventListener("mouseover", () => {
+        menu.classList.remove("invisible", "opacity-0")
+    })
+    menu.addEventListener("mouseout", () => {
+        menu.classList.add("invisible", "opacity-0")
+    })
+})
+document.querySelectorAll("[data-submenu-trigger]").forEach(trigger => {
+    const submenu = trigger.querySelector("[data-submenu]")
+    trigger.addEventListener("mouseover", () => {
+        submenu.classList.remove("invisible", "opacity-0")
+    })
+    trigger.addEventListener("mouseout", () => {
+        submenu.classList.add("invisible", "opacity-0")
+    })
+    submenu.addEventListener("mouseover", () => {
+        submenu.classList.remove("invisible", "opacity-0")
+    })
+    submenu.addEventListener("mouseout", () => {
+        submenu.classList.add("invisible", "opacity-0")
+    })
+})
+    </script>
+</body>
+</html>
