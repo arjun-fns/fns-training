@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-left: 200px;
+  background-size: cover;
+}
+.first-div {
+  display: flex;
+  gap: 1em;
+  margin-top: 20px;
+}
+/* .img {
+  width: 270px;
+} */
+.second-div {
+  display: flex;
+  gap: 1em;
+}
+
+.img img {
+  width: 270px;
+  height: 300px;
+  border-radius: 10px;
+
+  object-fit: scale-down;
+}
+
+.second-div .img {
+  width: 270px;
+  height: 300px;
+  border-radius: 10px;
+  margin-top: -2%;
+}
+.img {
+  width: 270px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+p {
+  margin-top: 20%;
+}
