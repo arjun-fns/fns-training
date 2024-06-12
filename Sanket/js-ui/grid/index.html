@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+<body>
+
+  <div class="mx-40">
+    <div class="grid md:m-4 gap-4 m-6 md:grid-cols-12" id="firstRow">
+      <div class="min-h-[200px] rounded md:col-span-6 shadow-xl">
+        <div class="p-2 flex flex-col justify-center items-center">
+          <img class="w-full h-36 object-cover" src="https://images.unsplash.com/photo-1716872491340-4626a22c582d?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <h1 class="text-2xl font-semibold my-2">Product</h1>
+          <p class="text-base text-center my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, beatae.</p>
+          <button class="px-4 py-2 rounded-md my-2 bg-blue-300">Add to Cart</button>
+        </div>
+      </div>
+      <div class="min-h-[200px] rounded bg-teal-300 md:col-span-3 shadow-xl"></div>
+      <div class="min-h-[200px] rounded bg-red-300 md:col-span-3 shadow-xl"></div>
+    </div>
+
+
+    <div class="grid md:m-4 gap-4 m-6 md:grid-cols-12">
+      <div class="min-h-[200px] rounded bg-teal-300 md:col-span-3 shadow-xl"></div>
+      <div class="min-h-[200px] rounded bg-red-300 md:col-span-3 shadow-xl"></div>
+      <div class="min-h-[200px] rounded md:col-span-6 shadow-xl">
+        <div class="p-2 flex flex-col justify-center items-center">
+          <img class="w-full h-36 object-cover" src="https://images.unsplash.com/photo-1716872491340-4626a22c582d?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <h1 class="text-2xl font-semibold my-2">Product</h1>
+          <p class="text-base text-center my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, beatae.</p>
+          <button class="px-4 py-2 rounded-md my-2 bg-blue-300">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function addDivToFirstRow(content) {
+      const firstRow = document.getElementById('firstRow');
+      const newDiv = document.createElement('div');
+      newDiv.classList.add('min-h-[200px]', 'rounded', 'md:col-span-3', 'shadow-xl');
+      newDiv.innerHTML = content;
+      firstRow.appendChild(newDiv);
+    }
+
+    // Example usage
+    addDivToFirstRow(`
+  <div class="p-2 flex flex-col justify-center items-center">
+    <img class="w-full h-36 object-cover" src="https://images.unsplash.com/photo-1716872491340-4626a22c582d?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Example Image">
+    <h1 class="text-2xl font-semibold my-2">New Product</h1>
+    <p class="text-base text-center my-2">This is a new product description.</p>
+    <button class="px-4 py-2 rounded-md my-2 bg-blue-300">Add to Cart</button>
+  </div>`);
+  </script>
+</body>
+</html>
+
