@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>  
+
+  <section class="collection h-screen flex justify-center items-center bg-[#111424]">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+    <div class="content swiper-slide h-[28rem] w-[25rem]  border-y-4 rounded-lg overflow-hidden  bg-[#474F7A]">
+      <img src="Image1.jpg" class="w-full h-60 rounded-md object-cover" alt="">
+      <div class="text-content text-white flex justify-center items-center flex-col">
+        <h3 class="text-2xl font-semibold my-2">Description</h3>
+        <p class="text-sm w-[22rem] text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusamus ratione nesciunt atque, dolores vel
+          culpa debitis officia expedita unde?</p>
+        <button class="p-2 bg-[#81689D] rounded-lg cursor-pointer mt-6">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="content swiper-slide h-[28rem] w-[25rem] border border-y-4 rounded-lg overflow-hidden  bg-[#474F7A]">
+      <img src="image2.jpg" class="w-full h-60 rounded-md object-cover" alt="">
+      <div class="text-content text-white flex justify-center items-center flex-col">
+        <h3 class="text-2xl font-semibold my-2">Description</h3>
+        <p class="text-sm w-[22rem] text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusamus ratione nesciunt atque, dolores vel
+          culpa debitis officia expedita unde?</p>
+        <button class="p-2 bg-[#81689D] rounded-lg cursor-pointer mt-6">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="content swiper-slide h-[28rem] w-[25rem] border border-y-4 rounded-lg overflow-hidden  bg-[#474F7A]">
+      <img src="image3.jpg" class="w-full  h-60 rounded-md object-cover" alt="">
+      <div class="text-content text-white flex justify-center items-center flex-col">
+        <h3 class="text-2xl font-semibold my-2">Description</h3>
+        <p class="text-sm w-[22rem] text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusamus ratione nesciunt atque, dolores vel
+          culpa debitis officia expedita unde?</p>
+        <button class="p-2 bg-[#81689D] rounded-lg cursor-pointer mt-6">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="content swiper-slide h-[28rem] w-[25rem] border border-y-4 rounded-lg overflow-hidden  bg-[#474F7A]">
+      <img src="image4.jpg" class="w-full h-60 rounded-md object-cover" alt="">
+      <div class="text-content text-white flex justify-center items-center flex-col">
+        <h3 class="text-2xl font-semibold my-2">Description</h3>
+        <p class="text-sm w-[22rem] text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusamus ratione nesciunt atque, dolores vel
+          culpa debitis officia expedita unde?</p>
+        <button class="p-2 bg-[#81689D] rounded-lg cursor-pointer mt-6">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="content swiper-slide h-[28rem] w-[25rem] border border-y-4 rounded-lg overflow-hidden  bg-[#474F7A]">
+      <img src="image5.jpg" class="w-full h-60 rounded-md object-cover" alt="">
+      <div class="text-content text-white flex justify-center items-center flex-col">
+        <h3 class="text-2xl font-semibold my-2">Description</h3>
+        <p class="text-sm w-[22rem] text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusamus ratione nesciunt atque, dolores vel
+          culpa debitis officia expedita unde?</p>
+        <button class="p-2 bg-[#81689D] rounded-lg cursor-pointer mt-6">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="content swiper-slide h-[28rem] w-[25rem] border border-y-4 rounded-lg overflow-hidden  bg-[#474F7A]">
+      <img src="image6.jpg" class="w-full h-60 rounded-md object-cover" alt="">
+      <div class="text-content text-white flex justify-center items-center flex-col">
+        <h3 class="text-2xl font-semibold my-2">Description</h3>
+        <p class="text-sm w-[22rem] text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusamus ratione nesciunt atque, dolores vel
+          culpa debitis officia expedita unde?</p>
+        <button class="p-2 bg-[#81689D] rounded-lg cursor-pointer mt-6">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="content swiper-slide h-[28rem] w-[25rem] border border-y-4 rounded-lg overflow-hidden  bg-[#474F7A]">
+      <img src="image7.jpg" class="w-full h-60 rounded-md object-cover" alt="">
+      <div class="text-content text-white flex justify-center items-center flex-col">
+        <h3 class="text-2xl font-semibold my-2">Description</h3>
+        <p class="text-sm w-[22rem] text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusamus ratione nesciunt atque, dolores vel
+          culpa debitis officia expedita unde?</p>
+        <button class="p-2 bg-[#81689D] rounded-lg cursor-pointer mt-6">Add to Cart</button>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+
+  </div>
+  </section> 
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      loop:true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 150,
+        modifier: 2.5,
+        slideShadows: true,
+      },
+      autoplay:{
+        delay:3000,
+        disableOnInteraction:false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+    });
+  </script>
+
+</body>
+</html>
+
+
+
+

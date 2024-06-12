@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megamenu</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        a:hover{
+           background-color: rgb(197, 216, 197);
+           color: rgb(5, 36, 5);
+        }
+        a{
+            padding: 0.5rem;
+           border-radius: 0.5rem;
+        }
+        .myarrow{
+            transition: 0.1s ease-in;
+        }
+        
+        .arrow:hover .myarrow{
+            transform: translateX(30%);
+            color: rgb(95, 205, 95);
+        }
+        .ham:hover{
+            cursor: pointer;
+            color: blueviolet;
+        }
+        
+
+    </style>
+</head>
+<body class="bg-white">
+    <div class="bg-white flex justify-between items-baseline pt-4 md:pt-8 px-2 md:px-8 gap-4 relative">
+        <div>
+            <h1 class="text-2xl font-bold text-black border-t-2 border-b-2 border-black">LANDMARK</h1>
+        </div>
+        <ul class="flex gap-4">
+            <li class="hidden md:block" data-dropdown>
+                <button class="text-black text-md inline-flex items-center hover:text-green-900 font-inherit" data-dropdown-button>
+                    <span >Megamenu</span>
+                                <svg class="ml-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                </button>
+                <div class="absolute left-0 right-0 mx-auto mt-4 col-span-6  w-[30%]  bg-white  rounded shadow-md invisible opacity-0  transition-all duration-300 ease-in-out" data-dropdown-menu>
+                    <ul class="grid grid-cols-2 gap-4 p-4">
+                        <!-- Column 1 -->
+                        <li class="flex flex-col gap-2">
+                            <a href="#" class="text-gray-800  block mb-1">Classic default</a>
+                            <a href="#" class="text-gray-800  block mb-1">Creative Agency</a>
+                            <a href="#" class="text-gray-800  block mb-1">Digital Agency</a>
+                            <a href="#" class="text-gray-800  block mb-1">Design Agency</a>
+                            <a href="#" class="text-gray-800  block mb-1">Product Landing</a>
+                            <a href="#" class="text-gray-800  block mb-1">Mobile App Showcase</a>                            
+                        </li>
+
+                        <!-- Column 2 -->
+                        <li class="flex flex-col gap-2">
+                            <a href="#" class="text-gray-800  block mb-1">SaaS v.1</a>
+                            <a href="#" class="text-gray-800  block mb-1">SaaS v.2</a>
+                            <a href="#" class="text-gray-800  block mb-1">SaaS v.3</a>
+                            <a href="#" class="text-gray-800  block mb-1">SaaS v.4</a>
+                            <a href="#" class="text-gray-800  block mb-1">Finance Consulting</a>
+                            <a href="#" class="text-gray-800  block mb-1">Index Shop</a>
+                        </li>
+                    </ul>
+
+                    <div class="border-t-2 border-gray-200 mt-2"></div>
+                    <div class="w-full flex mt-2 p-4">
+                        <div class="gap-2">
+                            <h1 class="font-bold text-base">Ready to get started?</h1>
+                            <p class="text-xs opacity-60">Take your documents to the next level with Mizzle</p>
+                        </div>
+                        <div class="ml-12">
+                            <button class="rounded-md px-3 py-2 bg-[#09B850] text-xs text-white font-medium flex items-center">Get in touch</button>
+                        </div>
+                    </div>
+
+                </div>
+            </li>
+
+
+            <li class="hidden md:block" data-dropdown>
+                <button class="text-black text-md inline-flex items-center hover:text-green-900 font-inherit" data-dropdown-button>
+                    <span >Pages</span>
+                                <svg class="ml-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                </button>
+                <div class="absolute left-0 right-0 mx-auto mt-4 col-span-6  w-[20%]  bg-white  rounded shadow-md invisible opacity-0  transition-all duration-300 ease-in-out" data-dropdown-menu>
+                    <ul class="grid grid-cols-1 gap-2 p-2">
+                        
+                        <li class="flex flex-col gap-2">
+
+                            
+                            <div class="relative" data-submenu-trigger>
+                                <a href="#" class="text-gray-800 block mb-1">About
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-4 h-4 ml-2" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </a>
+                                
+                                <ul class="absolute top-0 left-40 w-[200px] bg-white rounded shadow-xl p-3 invisible opacity-0 transition-all duration-250 ease-in-out" data-submenu>
+                                    <li class="flex flex-col gap-1">
+                                        <a href="#" class="text-gray-800  block mb-1">About v.1</a>
+                                        <a href="#" class="text-gray-800  block mb-1">About v.2</a>
+                                        <a href="#" class="text-gray-800  block mb-1">About v.3</a>
+                                        <a href="#" class="text-gray-800  block mb-1">Contact v.1</a>
+                                        <a href="#" class="text-gray-800  block mb-1">Team</a>
+                                        <a href="#" class="text-gray-800  block mb-1">Service v.1</a>
+                                        <a href="#" class="text-gray-800  block mb-1">Service v.2</a>
+                                        <a href="#" class="text-gray-800  block mb-1">Service Single</a>
+                                        <a href="#" class="text-gray-800  block mb-1">Customer Stories</a>
+                                        <a href="#" class="text-gray-800  block mb-1">Customer Story Single</a>
+                                        <a href="#" class="text-gray-800  block mb-1">Career</a>
+                                        <a href="#" class="text-gray-800  block mb-1">Career Single</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <a href="#" class="text-gray-800  block mb-1">Contact v.1</a>
+                            <a href="#" class="text-gray-800  block mb-1">Contact v.1</a>
+                            <a href="#" class="text-gray-800  block mb-1">Saas Pages</a>
+                            <a href="#" class="text-gray-800  block mb-1">Shop</a>
+                            <a href="#" class="text-gray-800  block mb-1">Blog</a>
+                            <a href="#" class="text-gray-800  block mb-1">Speciality Pages</a>
+                            <a href="#" class="text-gray-800  block mb-1">Authentication</a>
+                            <a href="#" class="text-gray-800  block mb-1">Accounts</a>
+                        </li>
+
+                        <div class="border-t-2 border-gray-200 mt-2"></div>
+
+                        <div class="flex flex-col gap-2">
+                            <a href="#" class="text-gray-800  block mb-1">RTL Demo</a>
+                            <a href="#" class="text-gray-800  block mb-1">Support</a>
+                            <a href="#" class="text-gray-800  block mb-1">Documentation</a>
+                        </div>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        
+        <div>
+            <button class="hidden md:block p-2 bg-green-600 text-white rounded-lg">Buy now!</button>
+        </div>
+        <div onclick="hamShow()" class="block md:hidden ham">
+            <i class="text-4xl bi bi-list"></i>
+        </div>
+
+        <!-- for hamburger -->
+        <div id="hambtn" class="invisible opacity-0 w-full md:hidden h-auto absolute top-[150%] left-0 right-0 transition-all duration-300 ease-in-out">
+            <ul class="flex flex-col">
+                <!-- Demos Dropdown -->
+                <li  class="w-full border-t-2 py-4 border-gray-300">
+                    <ul class="text-black text-md flex flex-col gap-4 justify-between hover:text-green-900 font-inherit px-2">
+                        <li onclick="toggleDropdown('demoDropdownContent')" class="flex justify-between">
+                            <h1 class="text-black font-semibold text-base">Demos</h1>
+                            <svg class="ml-1 w-5 h-5 text-right" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12l7 7 7-7"></path>
+                            </svg>
+                            
+                            
+                        </li>
+                        <li id="demoDropdownContent" class="hidden border-2 border-gray-400 rounded-md">
+                            <ul class="grid grid-cols-1 gap-4 p-4">
+                                <!-- Column - 1 -->
+                                <li class="flex flex-col gap-2">
+                                    <a href="#" class="text-gray-800 block mb-1">Classic default</a>
+                                    <a href="#" class="text-gray-800 block mb-1">Creative Agency</a>
+                                    <a href="#" class="text-gray-800 block mb-1">Digital Agency</a>
+                                    <a href="#" class="text-gray-800 block mb-1">Design Agency</a>
+                                    <a href="#" class="text-gray-800 block mb-1">Product Landing</a>
+                                    <a href="#" class="text-gray-800 block mb-1">SaaS v.1</a>
+                                    <a href="#" class="text-gray-800 block mb-1">SaaS v.2</a>
+                                    <a href="#" class="text-gray-800 block mb-1">SaaS v.3</a>
+                                    <a href="#" class="text-gray-800 block mb-1">SaaS v.4</a>
+                                    <a href="#" class="text-gray-800 block mb-1">Finance Consulting</a>
+                                    <a href="#" class="text-gray-800 block mb-1">Index Shop</a>
+                                </li>
+                                <div class="border-t-2 border-gray-200 mt-2"></div>
+                                <div class="w-full flex mt-2">
+                                    <div class="gap-2">
+                                        <h1 class="font-bold text-base">Ready to get started?</h1>
+                                        <p class="text-xs opacity-60">Take your documents to the next level with Mizzle</p>
+                                    </div>
+                                    <div class="ml-12">
+                                        <button class="rounded-md px-3 py-2 bg-[#09B850] text-xs text-white font-medium flex items-center">Get in touch</button>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+        
+                <!-- Pages Dropdown -->
+                <li  class="w-full border-t-2 border-b-2 py-4 border-gray-300">
+                    <ul class="text-black text-md flex flex-col gap-4 justify-between hover:text-green-900 font-inherit px-2">
+                        <li onclick="toggleDropdown('pagesDropdownContent')" class="flex justify-between">
+                            <h1 class="text-black font-semibold text-base">Pages</h1>
+                            <svg class="ml-1 w-5 h-5 text-right" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </li>
+                        <li id="pagesDropdownContent" class="hidden border-2 border-gray-400 rounded-md">
+                            <div class="grid grid-cols-1 gap-4 p-4">
+                                <div class="flex flex-col gap-2">
+                                    <div  class="text-gray-800 block mb-1 cursor-pointer">
+                                        <div onclick="toggleDropdown('aboutDropdownContent')" class="flex justify-between items-center">
+                                            <a href="#" class="text-gray-800 block mb-1">About</a>
+                                            <svg class="ml-1 w-5 h-5 text-right" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12l7 7 7-7"></path>
+                                            </svg>
+                                            
+                                        </div>
+                                        <ul id="aboutDropdownContent" class="hidden mt-2 border-2 border-gray-400 rounded-md">
+                                            <li class="flex flex-col gap-1">
+                                                <a href="#" class="text-gray-800 block mb-1">About v.1</a>
+                                                <a href="#" class="text-gray-800 block mb-1">About v.2</a>
+                                                <a href="#" class="text-gray-800 block mb-1">About v.3</a>
+                                                <a href="#" class="text-gray-800 block mb-1">Contact v.1</a>
+                                                <a href="#" class="text-gray-800 block mb-1">Team</a>
+                                                <a href="#" class="text-gray-800 block mb-1">Service v.1</a>
+                                                <a href="#" class="text-gray-800 block mb-1">Service v.2</a>
+                                                <a href="#" class="text-gray-800 block mb-1">Service Single</a>
+                                                <a href="#" class="text-gray-800 block mb-1">Customer Stories</a>
+                                                <a href="#" class="text-gray-800 block mb-1">Customer Story Single</a>
+                                                <a href="#" class="text-gray-800 block mb-1">Career</a>
+                                                <a href="#" class="text-gray-800 block mb-1">Career Single</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-gray-800 block mb-1">Contact v.1</a>
+                                <a href="#" class="text-gray-800 block mb-1">Saas Pages</a>
+                                <a href="#" class="text-gray-800 block mb-1">Shop</a>
+                                <a href="#" class="text-gray-800 block mb-1">Blog</a>
+                                <a href="#" class="text-gray-800 block mb-1">Speciality Pages</a>
+                                <a href="#" class="text-gray-800 block mb-1">Authentication</a>
+                                <a href="#" class="text-gray-800 block mb-1">Accounts</a>
+                                <div class="border-t-2 border-gray-200 mt-2"></div>
+                                <div class="flex flex-col gap-2 px-2">
+                                    <a href="#" class="text-gray-800 block mb-1">RTL Demo</a>
+                                    <a href="#" class="text-gray-800 block mb-1">Support</a>
+                                    <a href="#" class="text-gray-800 block mb-1">Documentation</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+
+        <script>
+            let toggleDropdown = (dropdownId) => {
+                let dropdown = document.getElementById(dropdownId);
+                if (dropdown.classList.contains('hidden')) {
+                    dropdown.classList.remove('hidden');
+                } else {
+                    dropdown.classList.add('hidden');
+                }
+            }
+        
+            let hamShow = () => {
+                console.log("in hamshow")
+                let temp = document.getElementById('hambtn')
+                if (temp.classList.contains('invisible')) {
+                    temp.classList.remove('invisible', "opacity-0");
+                } else {
+                    temp.classList.add('invisible', "opacity-0")
+                }
+            }
+
+        
+    
+                // Dropdown code
+                document.querySelectorAll("[data-dropdown]").forEach(dropdown => {
+                const button = dropdown.querySelector("[data-dropdown-button]")
+                const menu = dropdown.querySelector("[data-dropdown-menu]")
+                button.addEventListener("mouseover", () => {
+                    menu.classList.remove("invisible", "opacity-0")
+                })
+                button.addEventListener("mouseout", () => {
+                    menu.classList.add("invisible", "opacity-0")
+                })
+                menu.addEventListener("mouseover", () => {
+                    menu.classList.remove("invisible", "opacity-0")
+                })
+                menu.addEventListener("mouseout", () => {
+                    menu.classList.add("invisible", "opacity-0")
+                })
+            })
+
+                // Submenu logic
+                document.querySelectorAll("[data-submenu-trigger]").forEach(trigger => {
+                const submenu = trigger.querySelector("[data-submenu]")
+                trigger.addEventListener("mouseover", () => {
+                    submenu.classList.remove("invisible", "opacity-0")
+                })
+                trigger.addEventListener("mouseout", () => {
+                    submenu.classList.add("invisible", "opacity-0")
+                })
+                submenu.addEventListener("mouseover", () => {
+                    submenu.classList.remove("invisible", "opacity-0")
+                })
+                submenu.addEventListener("mouseout", () => {
+                    submenu.classList.add("invisible", "opacity-0")
+                })
+            })
+    </script>
+</body>
+</html>
