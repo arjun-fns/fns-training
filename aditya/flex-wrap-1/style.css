@@ -1,0 +1,32 @@
+.body{
+    display: block;
+    margin: 8px;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    width: 27%;
+    padding: 30px;
+}
+.main .card img {
+    height: 50px;
+    width: 50px;
+}
+.card h1{
+    font-size: 25px;
+}
+.card p{
+    font-size: 15px;
+    color: #777;
+}
+
+@media  screen and (min-width:768px){
+    .main{
+        width: 100%;
+        flex-direction: column;
+    }
+
+}
